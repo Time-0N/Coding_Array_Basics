@@ -13,7 +13,7 @@ public class Coding_Test_Test {
         int[] testarr = {2,4,6,8,12,14,16,18};
 
         //WHEN
-        int[] arr3 = Coding_Test.linkArray()(arr1,arr2);
+        int[] arr3 = Coding_Test.linkArray(arr1,arr2);
 
         //THEN
         assertArrayEquals(testarr,arr3);
