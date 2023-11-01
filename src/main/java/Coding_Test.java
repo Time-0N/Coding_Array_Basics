@@ -49,6 +49,6 @@ public class Coding_Test {
 
         boolean PositivNum = isPositiv(valueC);
 
-        int[] arr3 = coupleArray(arr1,arr2);
+        int[] arr3 = linkArray(arr1,arr2);
     }
 }
