@@ -6,15 +6,27 @@ public class Coding_Test_Test {
 
 
     @Test
+    public void isPositiv_when5_thenReturnTrue() {
+        //GIVEN
+        int valueC = 5;
+
+        //WHEN
+        boolean shouldBeTrue = Coding_Test.isPositiv(valueC);
+
+        //THEN
+        assertTrue(shouldBeTrue);
+    }
+
+    @Test
     public void isPositiv_whenMinus5_thenReturnFalse() {
         //GIVEN
         int valueC = -5;
 
         //WHEN
-        boolean isFalse = Coding_Test.isPositiv(valueC);
+        boolean shouldBeFalse = Coding_Test.isPositiv(valueC);
 
         //THEN
-        assertFalse(isFalse);
+        assertFalse(shouldBeFalse);
     }
 
     @Test
@@ -44,15 +56,27 @@ public class Coding_Test_Test {
     }
 
     @Test
+    public void isEvenTest_when1_thenReturnFalse() {
+        //GIVEN
+        int valueA = 1;
+
+        //WHEN
+        boolean shouldBeFalse = Coding_Test.isEven(valueA);
+
+        //THEN
+        assertFalse(shouldBeFalse);
+    }
+
+    @Test
     public void isEvenTest_when2_thenReturnTrue() {
         //GIVEN
         int valueA = 2;
 
         //WHEN
-        boolean isTrue = Coding_Test.isEven(valueA);
+        boolean shouldBeTrue = Coding_Test.isEven(valueA);
 
         //THEN
-        assertTrue(isTrue);
+        assertTrue(shouldBeTrue);
     }
 
     @Test
