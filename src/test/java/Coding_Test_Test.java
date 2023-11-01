@@ -6,6 +6,21 @@ public class Coding_Test_Test {
 
 
     @Test
+    public void linkArray_whenArr1AndArr2GetCombined_thenReturnCombinedArray() {
+        //GIVEN
+        int[] arr1 = {2,4,6,8};
+        int[] arr2 = {12,14,16,18};
+        int[] testarr = {2,4,6,8,12,14,16,18};
+
+        //WHEN
+        int[] arr3 = Coding_Test.linkArray()(arr1,arr2);
+
+        //THEN
+        assertArrayEquals(testarr,arr3);
+
+    }
+
+    @Test
     public void isPositiv_when5_thenReturnTrue() {
         //GIVEN
         int valueC = 5;
